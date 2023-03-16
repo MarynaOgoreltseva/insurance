@@ -121,10 +121,9 @@ body {
 .section {
     &_hero {
         padding-top: 226px;
-        text-align: center;
         background: url('../img/herobg.jpg') no-repeat center / cover,
-        rgba(255, 255, 255, 0.5);
-        // background-blend-mode: darken;
+        rgba(0, 0, 0, 0.5);
+        background-blend-mode: darken;
     }
 }
 
@@ -132,6 +131,7 @@ body {
     max-width: 701px;
     width: 100%;
     margin: 0 auto;
+    text-align: center;
     &__text {
         max-width: 539px;
         margin: 40px auto;
@@ -175,8 +175,40 @@ body {
     text-align: center;
     letter-spacing: 0.2px;
     color: #FFFFFF;
-    &_invert {
+    &_accent {
         border: 1px solid #FFFFFF;
         background: transparent;
     }
+}
+
+.hero-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 120px;
+}
+
+.block {
+    background: #fff;
+    color: #252B42;
+    padding: 35px 75px 35px 40px;
+    max-width: 328px;
+    width: 100%;
+    &__logo {
+
+    }
+    &__title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: 0.1px;
+    }
+}
+
+.block:hover {
+    background: #23A6F0;
+    color: #FFFFFF;
+
 }
