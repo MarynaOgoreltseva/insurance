@@ -22,6 +22,10 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+a {
+  cursor: pointer;
+}
+
 .header {
   position: absolute;
   width: 100%;
@@ -50,8 +54,8 @@ body {
 .wrap_brand {
   display: flex;
   flex-wrap: wrap;
-  gap: 90px;
-  justify-content: center;
+  gap: 30px;
+  justify-content: space-between;
   align-items: center;
   padding-top: 58px;
   padding-bottom: 58px;
@@ -139,7 +143,7 @@ body {
 
 .section_hero {
   padding-top: 226px;
-  padding-bottom: 225px;
+  padding-bottom: 217px;
   background: url("../img/herobg.jpg") no-repeat center/cover, rgba(0, 0, 0, 0.5);
   background-blend-mode: darken;
 }
@@ -200,7 +204,6 @@ body {
 .btn__link {
   padding: 15px 36px;
   border-radius: 37px;
-  background: #23A6F0;
   text-decoration: none;
   font-style: normal;
   font-weight: 700;
@@ -209,10 +212,12 @@ body {
   text-align: center;
   letter-spacing: 0.2px;
   color: #FFFFFF;
-}
-.btn__link_accent {
   border: 1px solid #FFFFFF;
   background: transparent;
+}
+.btn__link:hover {
+  background: #23A6F0;
+  border: none;
 }
 
 .hero-row {
@@ -220,7 +225,9 @@ body {
   flex-wrap: wrap;
   gap: 30px;
   justify-content: center;
-  margin-bottom: -325px;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: -315px;
 }
 
 .block {
@@ -231,14 +238,8 @@ body {
   width: 100%;
 }
 .block__title {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 23.3px;
-  line-height: 32px;
-  letter-spacing: 0.1px;
   margin-top: 10px;
   margin-bottom: 10px;
-  color: #252B42;
 }
 .block__text {
   font-weight: 500;
@@ -383,7 +384,7 @@ body {
   padding-left: 20px;
 }
 
-.btn {
+.btnn {
   padding: 15px 22.5px;
   background-color: #23A6F0;
   font-weight: 400;

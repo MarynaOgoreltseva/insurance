@@ -22,6 +22,10 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+a {
+    cursor: pointer;
+}
+
 .header {
     position: absolute;
     width: 100%;
@@ -49,8 +53,8 @@ body {
     &_brand {
         display: flex;
         flex-wrap: wrap;
-        gap: 90px;
-        justify-content: center;
+        gap: 30px;
+        justify-content: space-between;
         align-items: center;
         padding-top: 58px;
         padding-bottom: 58px;
@@ -140,7 +144,7 @@ body {
 .section {
     &_hero {
         padding-top: 226px;
-        padding-bottom: 225px;
+        padding-bottom: 217px;
         background: url('../img/herobg.jpg') no-repeat center / cover,
         rgba(0, 0, 0, 0.5);
         background-blend-mode: darken;
@@ -203,7 +207,6 @@ body {
 .btn__link {
     padding: 15px 36px;
     border-radius: 37px;
-    background: #23A6F0;
     text-decoration: none;
     font-style: normal;
     font-weight: 700;
@@ -212,9 +215,11 @@ body {
     text-align: center;
     letter-spacing: 0.2px;
     color: #FFFFFF;
-    &_accent {
-        border: 1px solid #FFFFFF;
-        background: transparent;
+    border: 1px solid #FFFFFF;
+    background: transparent;
+    &:hover {
+        background: #23A6F0;
+        border: none;
     }
 }
 
@@ -223,7 +228,10 @@ body {
     flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
-    margin-bottom: -325px;
+    // margin-bottom: -325px;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -315px;
 }
 
 .block {
@@ -233,14 +241,8 @@ body {
     max-width: 329px;
     width: 100%;
     &__title {
-        font-style: normal;
-        font-weight: 700;
-        font-size: 23.3px;
-        line-height: 32px;
-        letter-spacing: 0.1px;
         margin-top: 10px;
         margin-bottom: 10px;
-        color: #252B42;
     }
     &__text {
         font-weight: 500;
@@ -362,6 +364,31 @@ body {
     }
 }
 
+// .brand__img {
+//     width: 151px;
+//     &_hooli {
+//         width: 153px;
+//         height: 34px;
+//     }
+//     &_lyft {
+//         width: 146px;
+//         height: 59px;
+//     }
+//     &_pied {
+//         width: 152px;
+//         height: 75px;
+//     }
+//     &_stripe {
+//         height: 42px;
+//     }
+//     &_aws {
+//         height: 62px;
+//     }
+//     &_reddit {
+//         height: 72px;
+//     }
+// }
+
 .btn-form__title {
     max-width: 266px;
     width: 100%;
@@ -371,6 +398,7 @@ body {
     max-width: 450px;
     width: 100%;
 }
+
 .email-form {
     display: flex;
     border-radius: 5px;
@@ -389,7 +417,7 @@ body {
     }
 }
 
-.btn {
+.btnn {
     padding: 15px 22.5px;
     background-color: #23A6F0;
     font-weight: 400;
