@@ -29,10 +29,18 @@ a {
 .header {
     position: absolute;
     width: 100%;
+    &__logo {
+        margin-right: 76px;
+        color: currentColor;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: 0.1px;
+    }
 }
 
 .wrap {
-    max-width: 1047px;
+    max-width: 1046px;
     width: 100%; 
     margin: 0 auto;
     &_header {
@@ -60,21 +68,13 @@ a {
         padding-bottom: 58px;
     }
     &_btn-form {
+        max-width: 1047px;
         background: linear-gradient(to right,#004788, #D71489);
         padding: 30px 41px 30px 50px;
         display: flex;
         flex-wrap: wrap;
         gap: 240px;
     }
-}
-
-.logo {
-    margin-right: 76px;
-    color: currentColor;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 32px;    
-    letter-spacing: 0.1px;
 }
 
 .nav {
@@ -111,7 +111,7 @@ a {
     }
 }
 
-.btn {
+.btn-link {
     background-color: #23A6F0;
     border-radius: 5px;
     color: currentColor;
@@ -150,7 +150,10 @@ a {
         background-blend-mode: darken;
     }
     &_features {
-        margin-bottom: 96px;
+        margin-bottom: 96px;display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
     }
 }
 
@@ -196,11 +199,14 @@ a {
         letter-spacing: 0.2px;
     }
     &_small {
+        font-weight: 700;
         font-size: 24px;
         line-height: 32px;
         letter-spacing: 0.1px;
-        color: #fff;
         text-transform: capitalize;
+    }
+    &_small-white {
+        color: #fff;
     }
 }
 
@@ -223,7 +229,7 @@ a {
     }
 }
 
-.hero-row {
+.hero-box {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
@@ -231,14 +237,14 @@ a {
     // margin-bottom: -325px;
     position: absolute;
     bottom: 0;
-    margin-bottom: -315px;
+    margin-bottom: -60px;
 }
 
 .block {
     background: #fff;
     color: #252B42;
-    padding: 35px 75px 35px 40px;
-    max-width: 329px;
+    padding: 35px 67px 35px 40px;
+    max-width: 328px;
     width: 100%;
     &__title {
         margin-top: 10px;
@@ -256,7 +262,6 @@ a {
 .block:hover {
     background: #23A6F0;
     color: #FFFFFF;
-
 }
 
 .block:hover .block__logo-svg #logo-svg{
@@ -264,12 +269,7 @@ a {
 }
 
 // Features styles start
-.section_features {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-}
+
 
 .features-content {
     margin-top: 176px;

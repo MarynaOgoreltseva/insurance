@@ -30,9 +30,17 @@ a {
   position: absolute;
   width: 100%;
 }
+.header__logo {
+  margin-right: 76px;
+  color: currentColor;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.1px;
+}
 
 .wrap {
-  max-width: 1047px;
+  max-width: 1046px;
   width: 100%;
   margin: 0 auto;
 }
@@ -61,20 +69,12 @@ a {
   padding-bottom: 58px;
 }
 .wrap_btn-form {
+  max-width: 1047px;
   background: linear-gradient(to right, #004788, #D71489);
   padding: 30px 41px 30px 50px;
   display: flex;
   flex-wrap: wrap;
   gap: 240px;
-}
-
-.logo {
-  margin-right: 76px;
-  color: currentColor;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 32px;
-  letter-spacing: 0.1px;
 }
 
 .nav {
@@ -111,30 +111,30 @@ a {
   letter-spacing: 0.2px;
 }
 
-.btn {
+.btn-link {
   background-color: #23A6F0;
   border-radius: 5px;
   color: currentColor;
   text-decoration: none;
   padding: 15px 21px 15px 25px;
 }
-.btn:hover {
+.btn-link:hover {
   background-color: #08507a;
 }
-.btn_login {
+.btn-link_login {
   display: flex;
   align-items: center;
   gap: 15px;
   padding-right: 21px;
 }
-.btn__name {
+.btn-link__name {
   font-weight: 700;
   font-size: 14px;
   line-height: 22px;
   text-align: right;
   letter-spacing: 0.2px;
 }
-.btn__icon {
+.btn-link__icon {
   width: 12px;
   height: 10px;
   display: inline-block;
@@ -149,6 +149,10 @@ a {
 }
 .section_features {
   margin-bottom: 96px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
 }
 
 .hero-desc {
@@ -194,11 +198,14 @@ a {
   letter-spacing: 0.2px;
 }
 .title_small {
+  font-weight: 700;
   font-size: 24px;
   line-height: 32px;
   letter-spacing: 0.1px;
-  color: #fff;
   text-transform: capitalize;
+}
+.title_small-white {
+  color: #fff;
 }
 
 .btn__link {
@@ -220,21 +227,21 @@ a {
   border: none;
 }
 
-.hero-row {
+.hero-box {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
   justify-content: center;
   position: absolute;
   bottom: 0;
-  margin-bottom: -315px;
+  margin-bottom: -60px;
 }
 
 .block {
   background: #fff;
   color: #252B42;
-  padding: 35px 75px 35px 40px;
-  max-width: 329px;
+  padding: 35px 67px 35px 40px;
+  max-width: 328px;
   width: 100%;
 }
 .block__title {
@@ -256,13 +263,6 @@ a {
 
 .block:hover .block__logo-svg #logo-svg {
   fill: #FFF;
-}
-
-.section_features {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
 }
 
 .features-content {
