@@ -144,7 +144,7 @@ a {
 .section {
     &_hero {
         padding-top: 226px;
-        padding-bottom: 217px;
+        padding-bottom: 105px;
         background: url('../img/herobg.jpg') no-repeat center / cover,
         rgba(0, 0, 0, 0.5);
         background-blend-mode: darken;
@@ -234,10 +234,9 @@ a {
     flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
-    // margin-bottom: -325px;
     position: absolute;
     bottom: 0;
-    margin-bottom: -60px;
+    margin-bottom: -185px;
 }
 
 .block {
