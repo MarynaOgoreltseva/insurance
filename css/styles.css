@@ -84,6 +84,9 @@ a {
   gap: 240px;
   margin-bottom: 132px;
 }
+.wrap_pricing {
+  max-width: 990px;
+}
 
 .nav {
   margin-right: 227px;
@@ -458,7 +461,7 @@ a {
   letter-spacing: 0.2px;
   color: #252B42;
   font-weight: 700;
-  padding: 50px 36px;
+  padding: 50px 40px;
 }
 .card__desc {
   margin: 35px auto;
@@ -498,6 +501,12 @@ a {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+.card__option {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
 }
 .card__list {
   text-align: left;
