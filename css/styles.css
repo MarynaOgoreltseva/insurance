@@ -28,6 +28,7 @@ a {
 
 .header {
   position: absolute;
+  z-index: 1;
   width: 100%;
 }
 .header__logo {
@@ -54,6 +55,13 @@ a {
   flex-wrap: wrap;
   color: #FFFFFF;
 }
+.wrap_features {
+  margin-bottom: 96px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 31px;
+}
 .wrap_review {
   padding: 112px 16px;
   margin-bottom: 85px;
@@ -62,7 +70,6 @@ a {
 .wrap_brand {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
   justify-content: space-between;
   align-items: center;
   padding-top: 58px;
@@ -75,6 +82,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   gap: 240px;
+  margin-bottom: 132px;
 }
 
 .nav {
@@ -111,48 +119,62 @@ a {
   letter-spacing: 0.2px;
 }
 
-.btn-link {
+.btn {
   background-color: #23A6F0;
   border-radius: 5px;
-  color: currentColor;
+  color: #ffffff;
   text-decoration: none;
   padding: 15px 21px 15px 25px;
 }
-.btn-link:hover {
+.btn:hover {
   background-color: #08507a;
 }
-.btn-link_login {
+.btn_login {
   display: flex;
   align-items: center;
   gap: 15px;
   padding-right: 21px;
 }
-.btn-link__name {
+.btn__name {
   font-weight: 700;
   font-size: 14px;
   line-height: 22px;
   text-align: right;
   letter-spacing: 0.2px;
 }
-.btn-link__icon {
+.btn__icon {
   width: 12px;
   height: 10px;
   display: inline-block;
   background: url("../img/Vector.png") no-repeat center right;
 }
+.btn_email-form {
+  padding: 15px 22.5px;
+  background-color: #23A6F0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #FFFFFF;
+  border-radius: 0;
+}
+.btn_card {
+  padding: 15px 82px;
+  display: block;
+}
 
+.section {
+  position: relative;
+}
 .section_hero {
   padding-top: 226px;
   padding-bottom: 105px;
   background: url("../img/herobg.jpg") no-repeat center/cover, rgba(0, 0, 0, 0.5);
   background-blend-mode: darken;
 }
-.section_features {
-  margin-bottom: 96px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
+.section_btn-form .title {
+  color: #fff;
 }
 
 .hero-desc {
@@ -204,9 +226,6 @@ a {
   letter-spacing: 0.1px;
   text-transform: capitalize;
 }
-.title_small-white {
-  color: #fff;
-}
 
 .btn__link {
   padding: 15px 36px;
@@ -234,7 +253,7 @@ a {
   justify-content: center;
   position: absolute;
   bottom: 0;
-  margin-bottom: -185px;
+  margin-bottom: -115px;
 }
 
 .block {
@@ -243,6 +262,7 @@ a {
   padding: 35px 67px 35px 40px;
   max-width: 328px;
   width: 100%;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 .block__title {
   margin-top: 10px;
@@ -267,7 +287,7 @@ a {
 
 .features-content {
   margin-top: 176px;
-  max-width: 329px;
+  max-width: 328px;
   width: 100%;
   text-align: center;
   padding: 40px 45.5px;
@@ -313,8 +333,7 @@ a {
   justify-content: center;
   max-width: 1013px;
   width: 100%;
-  margin: 0 auto;
-  margin-top: 80px;
+  margin: 80px auto 0;
 }
 
 .review-block {
@@ -356,9 +375,35 @@ a {
   background: url(../img/fill-star.png);
 }
 
-.btn-form__title {
-  max-width: 266px;
-  width: 100%;
+.brand__img-link {
+  width: 151px;
+}
+.brand__img-link_hooli {
+  width: 153px;
+  height: 34px;
+  padding: 0 25px;
+}
+.brand__img-link_lyft {
+  width: 146px;
+  height: 59px;
+  padding: 0 31px;
+}
+.brand__img-link_pied {
+  width: 152px;
+  height: 75px;
+  padding: 0 25px;
+}
+.brand__img-link_stripe {
+  height: 42px;
+  padding: 0 24px;
+}
+.brand__img-link_aws {
+  height: 62px;
+  padding: 0 23px;
+}
+.brand__img-link_reddit {
+  height: 72px;
+  padding: 0 37px;
 }
 
 .btn-form__email {
@@ -384,14 +429,114 @@ a {
   padding-left: 20px;
 }
 
-.btnn {
-  padding: 15px 22.5px;
-  background-color: #23A6F0;
-  font-weight: 400;
+.pricing {
+  text-align: center;
+}
+.pricing__desc {
+  font-weight: 500;
   font-size: 14px;
-  line-height: 28px;
+  line-height: 20px;
   text-align: center;
   letter-spacing: 0.2px;
-  color: #FFFFFF;
-  border-radius: 0;
+  color: #737373;
+  margin-top: 10px;
+  margin-bottom: 80px;
+}
+.pricing__cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1px;
+}
+
+.card {
+  margin-top: 40px;
+  text-align: center;
+  background: #FFFFFF;
+  border: 1px solid #23A6F0;
+  border-radius: 10px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #252B42;
+  font-weight: 700;
+  padding: 50px 36px;
+}
+.card__desc {
+  margin: 35px auto;
+  max-width: 165px;
+  width: 100%;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  color: #737373;
+}
+.card__prise {
+  margin-top: 35px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  color: #23A6F0;
+}
+.card__cost {
+  font-size: 40px;
+  line-height: 57px;
+}
+.card__element {
+  text-align: left;
+}
+.card__value {
+  font-size: 16px;
+  letter-spacing: 0.1px;
+}
+.card__time {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  color: #8EC2F2;
+}
+.card__option-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.card__list {
+  text-align: left;
+  margin-top: 35px;
+}
+.card__select {
+  width: 32px;
+  height: 32px;
+  background: #BDBDBD;
+  border-radius: 200px;
+  position: relative;
+}
+.card__select svg {
+  position: absolute;
+  top: 9px;
+  left: 7px;
+}
+.card__select.is-active {
+  background: #2DC071;
+}
+.card__option-wrap {
+  margin-bottom: 15px;
+}
+.card__option-wrap:last-child {
+  margin-bottom: 0;
+}
+.card__link {
+  margin-top: 35px;
+}
+.card_color {
+  margin-top: 0;
+  background: #252B42;
+  color: #fff;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.card_color .title {
+  color: #fff;
+}
+.card_color .card__desc {
+  color: #fff;
 }/*# sourceMappingURL=styles.css.map */

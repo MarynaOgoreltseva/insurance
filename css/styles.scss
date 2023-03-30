@@ -28,6 +28,7 @@ a {
 
 .header {
     position: absolute;
+    z-index: 1;
     width: 100%;
     &__logo {
         margin-right: 76px;
@@ -53,6 +54,13 @@ a {
         flex-wrap: wrap;
         color: #FFFFFF;
     }
+    &_features {
+        margin-bottom: 96px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 31px;
+    }
     &_review {
         padding: 112px 16px;
         margin-bottom: 85px;
@@ -61,7 +69,6 @@ a {
     &_brand {
         display: flex;
         flex-wrap: wrap;
-        gap: 30px;
         justify-content: space-between;
         align-items: center;
         padding-top: 58px;
@@ -74,6 +81,7 @@ a {
         display: flex;
         flex-wrap: wrap;
         gap: 240px;
+        margin-bottom: 132px;
     }
 }
 
@@ -111,12 +119,14 @@ a {
     }
 }
 
-.btn-link {
+
+.btn {
     background-color: #23A6F0;
     border-radius: 5px;
-    color: currentColor;
+    color: #ffffff;
     text-decoration: none;
     padding: 15px 21px 15px 25px;
+
     &:hover {
         background-color: #08507a;
     }
@@ -125,7 +135,8 @@ a {
         align-items: center;
         gap: 15px;
         padding-right: 21px;
-        }
+    }
+
     &__name {
         font-weight: 700;
         font-size: 14px;
@@ -133,15 +144,34 @@ a {
         text-align: right;
         letter-spacing: 0.2px;
     }
+
     &__icon {
         width: 12px;
         height: 10px;
         display: inline-block;
         background: url('../img/Vector.png') no-repeat center right;
     }
+    &_email-form {
+        padding: 15px 22.5px;
+        background-color: #23A6F0;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 28px;
+        text-align: center;
+        letter-spacing: 0.2px;
+        color: #FFFFFF;
+        border-radius: 0;
+    }
+    &_card {
+        padding: 15px 82px;
+        display: block;
+    }
 }
 
+
+
 .section {
+    position: relative;
     &_hero {
         padding-top: 226px;
         padding-bottom: 105px;
@@ -149,11 +179,10 @@ a {
         rgba(0, 0, 0, 0.5);
         background-blend-mode: darken;
     }
-    &_features {
-        margin-bottom: 96px;display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 30px;
+    &_btn-form {
+        .title {
+            color: #fff;
+        }
     }
 }
 
@@ -205,9 +234,6 @@ a {
         letter-spacing: 0.1px;
         text-transform: capitalize;
     }
-    &_small-white {
-        color: #fff;
-    }
 }
 
 .btn__link {
@@ -236,7 +262,7 @@ a {
     justify-content: center;
     position: absolute;
     bottom: 0;
-    margin-bottom: -185px;
+    margin-bottom: -115px;
 }
 
 .block {
@@ -245,6 +271,7 @@ a {
     padding: 35px 67px 35px 40px;
     max-width: 328px;
     width: 100%;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     &__title {
         margin-top: 10px;
         margin-bottom: 10px;
@@ -272,7 +299,7 @@ a {
 
 .features-content {
     margin-top: 176px;
-    max-width: 329px;
+    max-width: 328px;
     width: 100%;
     text-align: center;
     padding: 40px 45.5px;
@@ -321,8 +348,7 @@ a {
     justify-content: center;
     max-width: 1013px;
     width: 100%;
-    margin: 0 auto;
-    margin-top: 80px;
+    margin: 80px auto 0;
 }
 
 .review-block {
@@ -363,35 +389,38 @@ a {
     }
 }
 
-// .brand__img {
-//     width: 151px;
-//     &_hooli {
-//         width: 153px;
-//         height: 34px;
-//     }
-//     &_lyft {
-//         width: 146px;
-//         height: 59px;
-//     }
-//     &_pied {
-//         width: 152px;
-//         height: 75px;
-//     }
-//     &_stripe {
-//         height: 42px;
-//     }
-//     &_aws {
-//         height: 62px;
-//     }
-//     &_reddit {
-//         height: 72px;
-//     }
-// }
-
-.btn-form__title {
-    max-width: 266px;
-    width: 100%;
+.brand__img-link {
+    width: 151px;
+    &_hooli {
+        width: 153px;
+        height: 34px;
+        padding: 0 25px;
+    }
+    &_lyft {
+        width: 146px;
+        height: 59px;
+        padding: 0 31px;
+    }
+    &_pied {
+        width: 152px;
+        height: 75px;
+        padding: 0 25px;
+    }
+    &_stripe {
+        height: 42px;
+        padding: 0 24px;
+    }
+    &_aws {
+        height: 62px;
+        padding: 0 23px;
+    }
+    &_reddit {
+        height: 72px;
+        padding: 0 37px;
+    }
 }
+
+
 
 .btn-form__email {
     max-width: 450px;
@@ -416,14 +445,115 @@ a {
     }
 }
 
-.btnn {
-    padding: 15px 22.5px;
-    background-color: #23A6F0;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 28px;
+// pricing styles start
+.pricing {
     text-align: center;
+    &__desc {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: 0.2px;
+        color: #737373;
+        margin-top: 10px;
+        margin-bottom: 80px;
+    }
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1px;
+    }
+}
+
+.card {
+    margin-top: 40px;
+    text-align: center;
+    background: #FFFFFF;
+    border: 1px solid #23A6F0;
+    border-radius: 10px;
+    line-height: 24px;
     letter-spacing: 0.2px;
-    color: #FFFFFF;
-    border-radius: 0;
+    color: #252B42;
+    font-weight: 700;
+    padding: 50px 36px;
+    &__desc {
+        margin: 35px auto;
+        max-width: 165px;
+        width: 100%;
+        font-size: 16px;
+        text-align: center;
+        letter-spacing: 0.1px;
+        color: #737373;
+    }
+    &__prise {
+        margin-top: 35px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        color: #23A6F0;
+    }
+    &__cost {
+        font-size: 40px;
+        line-height: 57px;
+    }
+    &__element {
+        text-align: left;
+    }
+    &__value {
+        font-size: 16px;
+        letter-spacing: 0.1px;
+    }
+    &__time {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        color: #8EC2F2;
+    }
+    &__option-wrap {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    &__list {
+        text-align: left;
+        margin-top: 35px;
+    }
+    &__select {
+        width: 32px;
+        height: 32px;
+        background: #BDBDBD;
+        border-radius: 200px;
+        position: relative;
+        & svg {
+            position: absolute;
+            top: 9px;
+            left: 7px;
+        }
+        &.is-active {
+            background: #2DC071;
+        }
+    }
+    &__option-wrap {
+        margin-bottom: 15px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__link {
+        margin-top: 35px;
+    }
+    &_color {
+        margin-top: 0;
+        background: #252B42;
+        color: #fff;
+        padding-top: 70px;
+        padding-bottom: 70px;
+        & .title {
+            color: #fff;
+        }
+        & .card__desc {
+            color: #fff;
+        }
+    }
 }
