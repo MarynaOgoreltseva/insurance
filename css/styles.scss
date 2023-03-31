@@ -169,6 +169,12 @@ a {
         padding: 15px 82px;
         display: block;
     }
+    &_booking {
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        letter-spacing: 0.2px;
+    }
 }
 
 
@@ -186,6 +192,12 @@ a {
         .title {
             color: #fff;
         }
+    }
+    &_booking {
+        margin-top: 112px;
+        background: #252B42;
+        position: relative;
+        padding-bottom: 479px;
     }
 }
 
@@ -526,7 +538,7 @@ a {
     }
     &__list {
         text-align: left;
-        margin-top: 35px;
+        margin-top: 31px;
     }
     &__select {
         width: 32px;
@@ -564,5 +576,78 @@ a {
         & .card__desc {
             color: #fff;
         }
+    }
+}
+
+.booking {
+    text-align: center;
+    &__holder {
+        padding-top: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    & .title_medium {        
+        color: #FFFFFF;
+    }
+    &__desc {
+        max-width: 455px;
+        width: 100%;
+        margin-top: 15px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+        color: #FFFFFF;
+    }
+    &__card {
+        display: flex;
+        flex-wrap: wrap;
+        background: #fff;
+        max-width: 877px;
+        width: 100%;
+        position: absolute;
+        left: 272px;
+        bottom: 0;
+        margin-bottom: -280px;
+    }
+    &__box {
+        padding: 40px 50px;
+        max-width: 610px;
+        width: 100%;
+    }
+    &__form {
+        text-align: left;
+        margin-top: 40px;
+        & .btn_booking {
+            margin-top: 40px;
+            width: 100%;
+        }
+    }
+    &__item {
+        margin-bottom: 10px;
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+    &__input-name {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.2px;
+        color: #252B42;
+        margin-bottom: 10px;
+    }
+    &__input {
+        background: #F9F9F9;
+        border: 1px solid #E6E6E6;
+        border-radius: 5px;
+        padding-top: 11px;
+        padding-bottom: 11px;
+        padding-left: 21px;
+        max-width: 507px;
+        width: 100%;
     }
 }

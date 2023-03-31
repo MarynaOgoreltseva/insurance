@@ -166,6 +166,12 @@ a {
   padding: 15px 82px;
   display: block;
 }
+.btn_booking {
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.2px;
+}
 
 .section {
   position: relative;
@@ -178,6 +184,12 @@ a {
 }
 .section_btn-form .title {
   color: #fff;
+}
+.section_booking {
+  margin-top: 112px;
+  background: #252B42;
+  position: relative;
+  padding-bottom: 479px;
 }
 
 .hero-desc {
@@ -510,7 +522,7 @@ a {
 }
 .card__list {
   text-align: left;
-  margin-top: 35px;
+  margin-top: 31px;
 }
 .card__select {
   width: 32px;
@@ -548,4 +560,77 @@ a {
 }
 .card_color .card__desc {
   color: #fff;
+}
+
+.booking {
+  text-align: center;
+}
+.booking__holder {
+  padding-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.booking .title_medium {
+  color: #FFFFFF;
+}
+.booking__desc {
+  max-width: 455px;
+  width: 100%;
+  margin-top: 15px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #FFFFFF;
+}
+.booking__card {
+  display: flex;
+  flex-wrap: wrap;
+  background: #fff;
+  max-width: 877px;
+  width: 100%;
+  position: absolute;
+  left: 272px;
+  bottom: 0;
+  margin-bottom: -280px;
+}
+.booking__box {
+  padding: 40px 50px;
+  max-width: 610px;
+  width: 100%;
+}
+.booking__form {
+  text-align: left;
+  margin-top: 40px;
+}
+.booking__form .btn_booking {
+  margin-top: 40px;
+  width: 100%;
+}
+.booking__item {
+  margin-bottom: 10px;
+}
+.booking__item:last-of-type {
+  margin-bottom: 0;
+}
+.booking__input-name {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #252B42;
+  margin-bottom: 10px;
+}
+.booking__input {
+  background: #F9F9F9;
+  border: 1px solid #E6E6E6;
+  border-radius: 5px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 21px;
+  max-width: 507px;
+  width: 100%;
 }/*# sourceMappingURL=styles.css.map */
