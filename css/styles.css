@@ -85,7 +85,11 @@ a {
   margin-bottom: 132px;
 }
 .wrap_pricing {
-  max-width: 990px;
+  max-width: 999px;
+}
+.wrap_booking {
+  position: relative;
+  padding-bottom: 479px;
 }
 
 .nav {
@@ -188,8 +192,6 @@ a {
 .section_booking {
   margin-top: 112px;
   background: #252B42;
-  position: relative;
-  padding-bottom: 479px;
 }
 
 .hero-desc {
@@ -592,7 +594,7 @@ a {
   max-width: 877px;
   width: 100%;
   position: absolute;
-  left: 272px;
+  left: 85px;
   bottom: 0;
   margin-bottom: -280px;
 }
@@ -633,4 +635,9 @@ a {
   padding-left: 21px;
   max-width: 507px;
   width: 100%;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  color: #737373;
 }/*# sourceMappingURL=styles.css.map */
