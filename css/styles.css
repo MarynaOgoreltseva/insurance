@@ -640,4 +640,16 @@ a {
   line-height: 28px;
   letter-spacing: 0.2px;
   color: #737373;
+}
+
+@media screen and (max-width: 1010px) {
+  .hero-box {
+    position: static;
+  }
+  .pricing__cards {
+    justify-content: center;
+  }
+  .booking__card {
+    position: static;
+  }
 }/*# sourceMappingURL=styles.css.map */
