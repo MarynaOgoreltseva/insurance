@@ -90,6 +90,9 @@ a {
         position: relative;
         padding-bottom: 479px;
     }
+    &_footer {
+        max-width: 1015px;
+    }
 }
 
 .nav {
@@ -179,6 +182,15 @@ a {
         text-align: center;
         letter-spacing: 0.2px;
     }
+    &_footer {
+        padding: 15px 40px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        letter-spacing: 0.2px;
+        color: #FFFFFF;
+    }
 }
 
 
@@ -250,6 +262,14 @@ a {
         line-height: 32px;
         letter-spacing: 0.1px;
         text-transform: capitalize;
+    }
+    &_minimal {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.1px;
+        color: #252B42;
     }
 }
 
@@ -659,6 +679,40 @@ a {
     }
 }
 
+.footer {
+    margin-top: 465px;
+    &__holder {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__column{
+
+    }
+    &__list {
+        list-style-type: none;
+    }
+    &__item-link {
+        text-decoration: none;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.2px;
+        color: #737373;
+    }
+    &__social-span {
+        display: flex;
+    }
+    &__social-pictures{
+        display: flex;
+    }
+}
 
 @media screen and (max-width: 1010px) {
     .hero-box {

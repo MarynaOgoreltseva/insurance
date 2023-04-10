@@ -91,6 +91,9 @@ a {
   position: relative;
   padding-bottom: 479px;
 }
+.wrap_footer {
+  max-width: 1015px;
+}
 
 .nav {
   margin-right: 227px;
@@ -176,6 +179,15 @@ a {
   text-align: center;
   letter-spacing: 0.2px;
 }
+.btn_footer {
+  padding: 15px 40px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #FFFFFF;
+}
 
 .section {
   position: relative;
@@ -242,6 +254,14 @@ a {
   line-height: 32px;
   letter-spacing: 0.1px;
   text-transform: capitalize;
+}
+.title_minimal {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  color: #252B42;
 }
 
 .btn__link {
@@ -640,6 +660,38 @@ a {
   line-height: 28px;
   letter-spacing: 0.2px;
   color: #737373;
+}
+
+.footer {
+  margin-top: 465px;
+}
+.footer__holder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.footer__menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.footer__list {
+  list-style-type: none;
+}
+.footer__item-link {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #737373;
+}
+.footer__social-span {
+  display: flex;
+}
+.footer__social-pictures {
+  display: flex;
 }
 
 @media screen and (max-width: 1010px) {
