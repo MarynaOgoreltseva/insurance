@@ -531,10 +531,14 @@ a {
   font-size: 14px;
   color: #8EC2F2;
 }
-.card__option-wrap {
+.card__item {
   display: flex;
   align-items: center;
   gap: 10px;
+  margin-bottom: 15px;
+}
+.card__item:last-child {
+  margin-bottom: 0;
 }
 .card__option {
   font-weight: 600;
@@ -560,12 +564,6 @@ a {
 }
 .card__select.is-active {
   background: #2DC071;
-}
-.card__option-wrap {
-  margin-bottom: 15px;
-}
-.card__option-wrap:last-child {
-  margin-bottom: 0;
 }
 .card__link {
   margin-top: 35px;

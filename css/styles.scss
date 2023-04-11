@@ -547,10 +547,14 @@ a {
         font-size: 14px;
         color: #8EC2F2;
     }
-    &__option-wrap {
+    &__item {
         display: flex;
         align-items: center;
         gap: 10px;
+        margin-bottom: 15px;
+            &:last-child {
+                margin-bottom: 0;
+            }
     }
     &__option {
         font-weight: 600;
@@ -575,12 +579,6 @@ a {
         }
         &.is-active {
             background: #2DC071;
-        }
-    }
-    &__option-wrap {
-        margin-bottom: 15px;
-        &:last-child {
-            margin-bottom: 0;
         }
     }
     &__link {
