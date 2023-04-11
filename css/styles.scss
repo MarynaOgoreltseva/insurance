@@ -186,7 +186,7 @@ a {
         padding: 15px 40px;
         font-weight: 700;
         font-size: 14px;
-        line-height: 22px;
+        line-height: 29px;
         text-align: center;
         letter-spacing: 0.2px;
         color: #FFFFFF;
@@ -679,12 +679,40 @@ a {
     }
 }
 
+.icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    &_phone {
+        background: url(../img/phone.png);
+    }
+    &_maps {
+        background: url(../img/maps.png);
+        height: 30px;
+    }
+    &_mail {
+        background: url(../img/mail.png);
+        width: 26px;
+    }
+}
+
 .footer {
     margin-top: 465px;
+    &__subtitle {
+        margin-top: 10px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+        color: #737373;
+    }
     &__holder {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        margin-bottom: 90px;
     }
     &__menu {
         display: flex;
@@ -692,10 +720,15 @@ a {
         justify-content: space-between;
     }
     &__column{
-
+        .title {
+            margin-bottom: 20px;
+        }
     }
     &__list {
         list-style-type: none;
+    }
+    &__item {
+        margin-bottom: 10px;
     }
     &__item-link {
         text-decoration: none;
@@ -705,12 +738,38 @@ a {
         line-height: 24px;
         letter-spacing: 0.2px;
         color: #737373;
+        &_contact {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            text-decoration: none;
+            margin-bottom: 10px;
+        }
     }
-    &__social-span {
+    &__contact {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.2px;
+        color: #737373;
+    }
+    &__social-row {
         display: flex;
+        justify-content: space-between;
+        margin-top: 75px;
+    }
+    &__social-text {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.2px;
+        color: #737373;
     }
     &__social-pictures{
         display: flex;
+        gap: 20px;
     }
 }
 
