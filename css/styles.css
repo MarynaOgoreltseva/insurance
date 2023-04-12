@@ -55,6 +55,9 @@ a {
   flex-wrap: wrap;
   color: #FFFFFF;
 }
+.wrap_nav-mobile {
+  display: none;
+}
 .wrap_features {
   margin-bottom: 96px;
   display: flex;
@@ -95,9 +98,6 @@ a {
   max-width: 1015px;
 }
 
-.nav {
-  margin-right: 227px;
-}
 .nav__list {
   display: flex;
   align-items: center;
@@ -120,6 +120,7 @@ a {
   align-items: center;
   flex-wrap: wrap;
   gap: 45px;
+  margin-left: auto;
 }
 .login__text {
   font-weight: 700;
@@ -763,13 +764,16 @@ a {
     position: static;
   }
 }
-@media screen and (max-width: 416px) {
+@media screen and (max-width: 768px) {
   .header.is-active {
     background-color: #fff;
     height: 100vh;
   }
   .wrap_header {
     display: none;
+  }
+  .wrap_nav-mobile {
+    display: block;
   }
   .icon {
     width: 24px;

@@ -54,6 +54,9 @@ a {
         flex-wrap: wrap;
         color: #FFFFFF;
     }
+    &_nav-mobile {
+        display: none;
+    }
     &_features {
         margin-bottom: 96px;
         display: flex;
@@ -96,7 +99,6 @@ a {
 }
 
 .nav {
-    margin-right: 227px;
     &__list {
         display: flex;
         align-items: center;
@@ -120,6 +122,7 @@ a {
     align-items: center;
     flex-wrap: wrap;
     gap: 45px;
+    margin-left: auto;
     &__text {
         font-weight: 700;
         font-size: 14px;
@@ -784,7 +787,8 @@ a {
     }
 }
 
-@media screen and (max-width: 416px) {
+
+@media screen and (max-width: 768px) {
     // кусок для бургер меню и моб навигаци
     .header {
         &.is-active {
@@ -792,9 +796,15 @@ a {
             height: 100vh;
         }
     }
-    .wrap_header {
-        display: none;
+    .wrap {
+        &_header {
+            display: none;
+        }
+        &_nav-mobile {
+            display: block;
+        }
     }
+
     .icon {
         width: 24px;
         height: 24px;
