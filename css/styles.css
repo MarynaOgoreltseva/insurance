@@ -762,4 +762,60 @@ a {
   .booking__card {
     position: static;
   }
+}
+@media screen and (max-width: 416px) {
+  .header.is-active {
+    background-color: #fff;
+    height: 100vh;
+  }
+  .wrap_header {
+    display: none;
+  }
+  .icon {
+    width: 24px;
+    height: 24px;
+  }
+  .icon_search {
+    background: url(../img/search.png);
+  }
+  .icon_basket {
+    background: url(../img/basket.png);
+    height: 22px;
+  }
+  .icon_burger {
+    background: url(../img/menu.png) no-repeat;
+    height: 14px;
+  }
+  .logo-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 37px 40px 0px 36px;
+  }
+  .logo-row__list {
+    display: flex;
+    align-items: center;
+  }
+  .logo-row__item {
+    list-style-type: none;
+  }
+  .nav-mobile {
+    display: none;
+  }
+  .nav-mobile.is-active {
+    display: block;
+  }
+  .nav-mobile__list {
+    text-align: center;
+  }
+  .nav-mobile__link {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 45px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #737373;
+  }
 }/*# sourceMappingURL=styles.css.map */

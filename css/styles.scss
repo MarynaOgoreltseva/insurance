@@ -771,6 +771,7 @@ a {
     }
 }
 
+
 @media screen and (max-width: 1010px) {
     .hero-box {
         position: static;
@@ -781,4 +782,68 @@ a {
     .booking__card {
         position: static;
     }
+}
+
+@media screen and (max-width: 416px) {
+    // кусок для бургер меню и моб навигаци
+    .header {
+        &.is-active {
+            background-color: #fff;
+            height: 100vh;
+        }
+    }
+    .wrap_header {
+        display: none;
+    }
+    .icon {
+        width: 24px;
+        height: 24px;
+        &_search {
+            background: url(../img/search.png);
+        }
+        &_basket {
+            background: url(../img/basket.png);
+            height: 22px;
+        }
+        &_burger {
+            background: url(../img/menu.png) no-repeat;
+            height: 14px;
+        }
+    }
+
+    .logo-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 37px 40px 0px 36px;
+        &__list {
+            display: flex;
+            align-items: center;
+        }
+        &__item {
+            list-style-type: none;
+        }
+    }
+
+    .nav-mobile {
+        display: none;
+        &.is-active {
+            display: block;
+        }
+        &__list {
+            text-align: center;
+        }
+        &__link {
+            text-decoration: none;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 45px;
+            text-align: center;
+            letter-spacing: 0.2px;
+            color: #737373;
+        }
+    }
+
+
 }
