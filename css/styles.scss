@@ -37,6 +37,9 @@ a {
         font-size: 24px;
         line-height: 32px;
         letter-spacing: 0.1px;
+        &_black {
+            margin-right: 0;
+        }
     }
 }
 
@@ -46,9 +49,9 @@ a {
     margin: 0 auto;
     &_header {
         max-width: 1080px;
-        padding-top: 33px;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-top: 21px;
+        padding-left: 16px;
+        padding-right: 23px;
         display: flex;
         align-items: center;
         flex-wrap: wrap;
@@ -103,7 +106,7 @@ a {
         display: flex;
         align-items: center;
         flex-wrap: wrap;
-        gap: 21px;
+        gap: 22px;
         list-style-type: none;
     }
     &__link {
@@ -121,7 +124,7 @@ a {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 45px;
+    gap: 46px;
     margin-left: auto;
     &__text {
         font-weight: 700;
@@ -146,8 +149,10 @@ a {
     &_login {
         display: flex;
         align-items: center;
-        gap: 15px;
-        padding-right: 21px;
+        gap: 17px;
+        padding-right: 22px;
+        padding-top: 13px;
+        padding-bottom: 15px;
     }
 
     &__name {
@@ -203,7 +208,7 @@ a {
     &_hero {
         padding-top: 226px;
         padding-bottom: 105px;
-        background: url('../img/herobg.jpg') no-repeat center / cover,
+        background: url('../img/herobg.jpg') no-repeat center / auto,
         rgba(0, 0, 0, 0.5);
         background-blend-mode: darken;
     }
@@ -225,21 +230,23 @@ a {
     margin-bottom: 120px;
     text-align: center;
     &__text {
-        max-width: 539px;
-        margin: 40px auto;
+        // max-width: 539px;
+        margin: 39px auto;
         font-style: normal;
         font-weight: 500;
         font-size: 20px;
         line-height: 30px;
         letter-spacing: 0.2px;
         color: #FFFFFF;
+        padding-right: 2px;
     }
-    &__btns {
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-        flex-wrap: wrap;
-    }
+    // &__btns {
+    //     // margin-top: 54px;
+    //     // display: flex;
+    //     // justify-content: center;
+    //     // gap: 9px;
+    //     // flex-wrap: wrap;
+    // }
 }
 
 .title {
@@ -277,6 +284,7 @@ a {
 }
 
 .btn__link {
+    display: inline-block;
     padding: 15px 36px;
     border-radius: 37px;
     text-decoration: none;
@@ -289,10 +297,15 @@ a {
     color: #FFFFFF;
     border: 1px solid #FFFFFF;
     background: transparent;
+    margin-right: 5px;
     &:hover {
         background: #23A6F0;
         border: none;
     }
+}
+
+.btn__link:last-child {
+    margin-right: 0;
 }
 
 .hero-box {
@@ -788,7 +801,7 @@ a {
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 416px) {
     // кусок для бургер меню и моб навигаци
     .header {
         &.is-active {
@@ -810,10 +823,12 @@ a {
         height: 24px;
         &_search {
             background: url(../img/search.png);
+            margin-right: 24px;
         }
         &_basket {
             background: url(../img/basket.png);
             height: 22px;
+            margin-right: 32px;
         }
         &_burger {
             background: url(../img/menu.png) no-repeat;
@@ -825,7 +840,7 @@ a {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        padding: 37px 40px 0px 36px;
+        padding: 37px 30px 0px 36px;
         &__list {
             display: flex;
             align-items: center;
@@ -855,5 +870,49 @@ a {
         }
     }
 
+    .title {
+        color: #252B42;
+        font-style: normal;
+        &_big {
+            color: #fff;
+            font-weight: 700;
+            font-size: 39px;
+            line-height: 57px;
+            letter-spacing: 0.2px;
+            text-transform: capitalize;
+        }
+        // &_medium {
+        //     font-weight: 700;
+        //     font-size: 40px;
+        //     line-height: 57px;
+        //     letter-spacing: 0.2px;
+        // }
+        // &_small {
+        //     font-weight: 700;
+        //     font-size: 24px;
+        //     line-height: 32px;
+        //     letter-spacing: 0.1px;
+        //     text-transform: capitalize;
+        // }
+        // &_minimal {
+        //     font-style: normal;
+        //     font-weight: 700;
+        //     font-size: 16px;
+        //     line-height: 24px;
+        //     letter-spacing: 0.1px;
+        //     color: #252B42;
+        // }
+    }
+
+    .hero-desc {
+        .title {
+            padding-right: 35px;
+            padding-left: 35px;
+        }
+        &__text {
+            max-width: 279px;
+            width: 100%;
+        }
+    }
 
 }

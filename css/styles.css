@@ -39,6 +39,9 @@ a {
   line-height: 32px;
   letter-spacing: 0.1px;
 }
+.header__logo_black {
+  margin-right: 0;
+}
 
 .wrap {
   max-width: 1046px;
@@ -47,9 +50,9 @@ a {
 }
 .wrap_header {
   max-width: 1080px;
-  padding-top: 33px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-top: 21px;
+  padding-left: 16px;
+  padding-right: 23px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -102,7 +105,7 @@ a {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 21px;
+  gap: 22px;
   list-style-type: none;
 }
 .nav__link {
@@ -119,7 +122,7 @@ a {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 45px;
+  gap: 46px;
   margin-left: auto;
 }
 .login__text {
@@ -143,8 +146,10 @@ a {
 .btn_login {
   display: flex;
   align-items: center;
-  gap: 15px;
-  padding-right: 21px;
+  gap: 17px;
+  padding-right: 22px;
+  padding-top: 13px;
+  padding-bottom: 15px;
 }
 .btn__name {
   font-weight: 700;
@@ -196,7 +201,7 @@ a {
 .section_hero {
   padding-top: 226px;
   padding-bottom: 105px;
-  background: url("../img/herobg.jpg") no-repeat center/cover, rgba(0, 0, 0, 0.5);
+  background: url("../img/herobg.jpg") no-repeat center/auto, rgba(0, 0, 0, 0.5);
   background-blend-mode: darken;
 }
 .section_btn-form .title {
@@ -215,20 +220,14 @@ a {
   text-align: center;
 }
 .hero-desc__text {
-  max-width: 539px;
-  margin: 40px auto;
+  margin: 39px auto;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 30px;
   letter-spacing: 0.2px;
   color: #FFFFFF;
-}
-.hero-desc__btns {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  flex-wrap: wrap;
+  padding-right: 2px;
 }
 
 .title {
@@ -266,6 +265,7 @@ a {
 }
 
 .btn__link {
+  display: inline-block;
   padding: 15px 36px;
   border-radius: 37px;
   text-decoration: none;
@@ -278,10 +278,15 @@ a {
   color: #FFFFFF;
   border: 1px solid #FFFFFF;
   background: transparent;
+  margin-right: 5px;
 }
 .btn__link:hover {
   background: #23A6F0;
   border: none;
+}
+
+.btn__link:last-child {
+  margin-right: 0;
 }
 
 .hero-box {
@@ -764,7 +769,7 @@ a {
     position: static;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 416px) {
   .header.is-active {
     background-color: #fff;
     height: 100vh;
@@ -781,10 +786,12 @@ a {
   }
   .icon_search {
     background: url(../img/search.png);
+    margin-right: 24px;
   }
   .icon_basket {
     background: url(../img/basket.png);
     height: 22px;
+    margin-right: 32px;
   }
   .icon_burger {
     background: url(../img/menu.png) no-repeat;
@@ -794,7 +801,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 37px 40px 0px 36px;
+    padding: 37px 30px 0px 36px;
   }
   .logo-row__list {
     display: flex;
@@ -821,5 +828,25 @@ a {
     text-align: center;
     letter-spacing: 0.2px;
     color: #737373;
+  }
+  .title {
+    color: #252B42;
+    font-style: normal;
+  }
+  .title_big {
+    color: #fff;
+    font-weight: 700;
+    font-size: 39px;
+    line-height: 57px;
+    letter-spacing: 0.2px;
+    text-transform: capitalize;
+  }
+  .hero-desc .title {
+    padding-right: 35px;
+    padding-left: 35px;
+  }
+  .hero-desc__text {
+    max-width: 279px;
+    width: 100%;
   }
 }/*# sourceMappingURL=styles.css.map */
