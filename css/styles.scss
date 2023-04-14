@@ -43,6 +43,31 @@ a {
     }
 }
 
+.section {
+    position: relative;
+
+    &_hero {
+        padding-top: 226px;
+        padding-bottom: 96px;
+        background: url('../img/herobg.jpg') no-repeat center / auto,
+            rgba(0, 0, 0, 0.5);
+        background-blend-mode: darken;
+    }
+    &_brand {
+        margin-top: 134px;
+    }
+    &_btn-form {
+        margin-top: 71px;
+        .title {
+            color: #fff;
+        }
+    }
+    &_booking {
+        margin-top: 112px;
+        background: #252B42;
+    }
+}
+
 .wrap {
     max-width: 1046px;
     width: 100%; 
@@ -61,6 +86,7 @@ a {
         display: none;
     }
     &_features {
+        margin-top: 300px;
         margin-bottom: 96px;
         display: flex;
         flex-wrap: wrap;
@@ -77,8 +103,6 @@ a {
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
-        padding-top: 58px;
-        padding-bottom: 58px;
     }
     &_btn-form {
         max-width: 1047px;
@@ -86,7 +110,7 @@ a {
         padding: 30px 41px 30px 50px;
         display: flex;
         flex-wrap: wrap;
-        gap: 240px;
+        gap: 246px;
         margin-bottom: 132px;
     }
     &_pricing {
@@ -146,6 +170,29 @@ a {
     &:hover {
         background-color: #08507a;
     }
+    &_link {
+        display: inline-block;
+        padding: 15px 36px;
+        border-radius: 37px;
+        text-decoration: none;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        letter-spacing: 0.2px;
+        border: 1px solid #FFFFFF;
+        background: transparent;
+        margin-right: 5px;
+
+        &:hover {
+            background: #23A6F0;
+            border: none;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+    }
     &_login {
         display: flex;
         align-items: center;
@@ -170,7 +217,7 @@ a {
         background: url('../img/Vector.png') no-repeat center right;
     }
     &_email-form {
-        padding: 15px 22.5px;
+        padding: 15px 27px 15px 24px;
         background-color: #23A6F0;
         font-weight: 400;
         font-size: 14px;
@@ -202,26 +249,6 @@ a {
 }
 
 
-
-.section {
-    position: relative;
-    &_hero {
-        padding-top: 226px;
-        padding-bottom: 105px;
-        background: url('../img/herobg.jpg') no-repeat center / auto,
-        rgba(0, 0, 0, 0.5);
-        background-blend-mode: darken;
-    }
-    &_btn-form {
-        .title {
-            color: #fff;
-        }
-    }
-    &_booking {
-        margin-top: 112px;
-        background: #252B42;
-    }
-}
 
 .hero-desc {
     max-width: 701px;
@@ -271,7 +298,6 @@ a {
         font-size: 24px;
         line-height: 32px;
         letter-spacing: 0.1px;
-        text-transform: capitalize;
     }
     &_minimal {
         font-style: normal;
@@ -283,31 +309,6 @@ a {
     }
 }
 
-.btn__link {
-    display: inline-block;
-    padding: 15px 36px;
-    border-radius: 37px;
-    text-decoration: none;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 22px;
-    text-align: center;
-    letter-spacing: 0.2px;
-    color: #FFFFFF;
-    border: 1px solid #FFFFFF;
-    background: transparent;
-    margin-right: 5px;
-    &:hover {
-        background: #23A6F0;
-        border: none;
-    }
-}
-
-.btn__link:last-child {
-    margin-right: 0;
-}
-
 .hero-box {
     display: flex;
     flex-wrap: wrap;
@@ -315,24 +316,25 @@ a {
     justify-content: center;
     position: absolute;
     bottom: 0;
-    margin-bottom: -115px;
+    margin-bottom: -108px;
 }
 
 .block {
     background: #fff;
     color: #252B42;
-    padding: 35px 67px 35px 40px;
+    padding: 35px 63px 37px 41px;
     max-width: 328px;
     width: 100%;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     &__title {
-        margin-top: 10px;
+        margin-top: 7px;
         margin-bottom: 10px;
+        line-height: 29px;
     }
     &__text {
         font-weight: 500;
         font-size: 14px;
-        line-height: 20px;
+        line-height: 21px;
         letter-spacing: 0.2px;
         color: #737373;
     }
@@ -351,7 +353,6 @@ a {
 
 
 .features-content {
-    margin-top: 176px;
     max-width: 328px;
     width: 100%;
     text-align: center;
@@ -363,7 +364,7 @@ a {
         line-height: 24px;
         letter-spacing: 0.1px;
         color: #252B42;
-        margin-top: 30px;
+        margin-top: 26px;
     }
     &__text {
         font-style: normal;
@@ -388,8 +389,8 @@ a {
         line-height: 20px;
         letter-spacing: 0.2px;
         color: #737373;
-        max-width: 470px;
-        width: 100%;
+        // max-width: 470px;
+        // width: 100%;
         margin: 0 auto;
     }
 }
@@ -397,17 +398,17 @@ a {
 .review-row {
     display: flex;
     flex-wrap: wrap;
-    gap: 46px;
+    gap: 63px;
     justify-content: center;
     max-width: 1013px;
     width: 100%;
-    margin: 80px auto 0;
+    margin-top: 80px;
 }
 
 .review-block {
     max-width: 295px;
     width: 100%;
-    padding: 40px 35px;
+    padding: 38px 38px 40px 38px;
     border: 1px solid #DEDEDE;
     &__img {
         width: 149px;
@@ -415,8 +416,9 @@ a {
         margin: 0 auto;
     }
     &__text {
-        margin-top: 30px;
-        margin-bottom: 10px;font-weight: 500;
+        margin-top: 29px;
+        margin-bottom: 16px;
+        font-weight: 500;
         font-size: 14px;
         line-height: 20px;
         text-align: center;
@@ -447,29 +449,30 @@ a {
     &_hooli {
         width: 153px;
         height: 34px;
-        padding: 0 25px;
+        padding: 0 27px 0 25px;
     }
     &_lyft {
         width: 146px;
         height: 59px;
-        padding: 0 31px;
+        padding: 0 31px 0 31px;
     }
     &_pied {
         width: 152px;
         height: 75px;
-        padding: 0 25px;
+        padding: 0 25px 0 25px;
     }
     &_stripe {
         height: 42px;
-        padding: 0 24px;
+        padding: 0 20px 0 26px;
+        width: 148px;
     }
     &_aws {
         height: 62px;
-        padding: 0 23px;
+        padding: 0 18px 0 27px;
     }
     &_reddit {
         height: 72px;
-        padding: 0 37px;
+        padding: 0 32px 0 42px;
     }
 }
 
@@ -492,9 +495,10 @@ a {
         font-weight: 400;
         font-size: 14px;
         line-height: 28px;
-        padding-top: 15px;
+        padding-top: 18px;
         padding-bottom: 15px;
         padding-left: 20px;
+        letter-spacing: 1.2px;
     }
 }
 
