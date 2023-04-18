@@ -106,21 +106,20 @@ a {
 .wrap_btn-form {
   max-width: 1047px;
   background: linear-gradient(to right, #004788, #D71489);
-  padding: 30px 41px 30px 50px;
+  padding: 32px 41px 28px 50px;
   display: flex;
   flex-wrap: wrap;
   gap: 246px;
   margin-bottom: 132px;
-}
-.wrap_pricing {
-  max-width: 999px;
 }
 .wrap_booking {
   position: relative;
   padding-bottom: 479px;
 }
 .wrap_footer {
-  max-width: 1015px;
+  max-width: 1051px;
+  width: 100%;
+  padding-right: 36px;
 }
 
 .nav__list {
@@ -209,7 +208,7 @@ a {
   background: url("../img/Vector.png") no-repeat center right;
 }
 .btn_email-form {
-  padding: 15px 27px 15px 24px;
+  padding: 15px 28px 15px 23px;
   background-color: #23A6F0;
   font-weight: 400;
   font-size: 14px;
@@ -220,23 +219,28 @@ a {
   border-radius: 0;
 }
 .btn_card {
-  padding: 15px 82px;
   display: block;
+  padding: 14px 21px 14px 25px;
 }
 .btn_booking {
+  font-weight: 700;
   font-size: 14px;
   line-height: 22px;
   text-align: center;
   letter-spacing: 0.2px;
+  margin-top: 33px;
+  width: 100%;
 }
 .btn_footer {
   padding: 15px 40px;
   font-weight: 700;
   font-size: 14px;
-  line-height: 29px;
+  line-height: 22px;
   text-align: center;
   letter-spacing: 0.2px;
   color: #FFFFFF;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .hero-desc {
@@ -466,11 +470,11 @@ a {
   border: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 28px;
-  padding-top: 18px;
-  padding-bottom: 15px;
+  line-height: 27px;
+  padding-top: 14px;
+  padding-bottom: 12px;
   padding-left: 20px;
-  letter-spacing: 1.2px;
+  letter-spacing: 1.3px;
 }
 
 .pricing {
@@ -490,6 +494,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   gap: 1px;
+  justify-content: center;
 }
 
 .card {
@@ -502,7 +507,10 @@ a {
   letter-spacing: 0.2px;
   color: #252B42;
   font-weight: 700;
-  padding: 50px 40px;
+  padding-top: 50px;
+  padding-right: 40px;
+  padding-bottom: 50px;
+  padding-left: 40px;
 }
 .card__desc {
   margin: 35px auto;
@@ -550,7 +558,7 @@ a {
 .card__option {
   font-weight: 600;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 25px;
   letter-spacing: 0.2px;
 }
 .card__list {
@@ -566,7 +574,7 @@ a {
 }
 .card__select svg {
   position: absolute;
-  top: 9px;
+  top: 12px;
   left: 7px;
 }
 .card__select.is-active {
@@ -588,6 +596,14 @@ a {
 .card_color .card__desc {
   color: #fff;
 }
+.card_small {
+  max-width: 327px;
+  width: 100%;
+}
+.card_big {
+  max-width: 329px;
+  width: 100%;
+}
 
 .booking {
   text-align: center;
@@ -598,6 +614,7 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  text-align: start;
 }
 .booking .title_medium {
   color: #FFFFFF;
@@ -621,20 +638,19 @@ a {
   position: absolute;
   left: 85px;
   bottom: 0;
-  margin-bottom: -280px;
+  margin-bottom: -283px;
 }
 .booking__box {
   padding: 40px 50px;
   max-width: 610px;
   width: 100%;
 }
+.booking__box .title_small {
+  font-size: 23px;
+}
 .booking__form {
   text-align: left;
   margin-top: 40px;
-}
-.booking__form .btn_booking {
-  margin-top: 40px;
-  width: 100%;
 }
 .booking__item {
   margin-bottom: 10px;
@@ -666,6 +682,11 @@ a {
   letter-spacing: 0.2px;
   color: #737373;
 }
+.booking select {
+  padding-top: 18px;
+  padding-bottom: 11px;
+  padding-left: 15px;
+}
 
 .icon {
   display: inline-block;
@@ -686,7 +707,7 @@ a {
 }
 
 .footer {
-  margin-top: 465px;
+  margin-top: 455px;
 }
 .footer__subtitle {
   margin-top: 10px;
@@ -706,10 +727,25 @@ a {
 .footer__menu {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  gap: 30px;
 }
 .footer__column .title {
   margin-bottom: 20px;
+}
+.footer__column_company {
+  padding-right: 31px;
+}
+.footer__column_legal {
+  padding-right: 52px;
+}
+.footer__column_features {
+  padding-right: 1px;
+}
+.footer__column_resourses {
+  padding-right: 42px;
+}
+.footer__column_get {
+  padding-right: 0;
 }
 .footer__list {
   list-style-type: none;
@@ -728,7 +764,7 @@ a {
 }
 .footer__item-link_contact {
   display: flex;
-  gap: 10px;
+  gap: 1px;
   align-items: center;
   text-decoration: none;
   margin-bottom: 10px;
@@ -744,7 +780,8 @@ a {
 .footer__social-row {
   display: flex;
   justify-content: space-between;
-  margin-top: 75px;
+  margin-top: 67px;
+  padding-right: 27px;
 }
 .footer__social-text {
   font-style: normal;
