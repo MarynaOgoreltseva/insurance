@@ -1,5 +1,5 @@
 $(document).ready(function() {
     $('.icon_burger').click(function() {
-        $('.nav-mobile,.header').toggleClass('is-active');
+        $('.nav-mobile,.header,.header__logo').toggleClass('is-active');
     });
 });

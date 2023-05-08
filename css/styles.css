@@ -33,7 +33,7 @@ a {
 }
 .header__logo {
   margin-right: 76px;
-  color: currentColor;
+  color: white;
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
@@ -640,6 +640,9 @@ a {
   bottom: 0;
   margin-bottom: -283px;
 }
+.booking__card-pic_mobile {
+  display: none;
+}
 .booking__box {
   padding: 40px 50px;
   max-width: 610px;
@@ -779,6 +782,7 @@ a {
 }
 .footer__social-row {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 67px;
   padding-right: 27px;
@@ -795,6 +799,9 @@ a {
   display: flex;
   gap: 20px;
 }
+.footer__social-img_mobile {
+  display: none;
+}
 
 @media screen and (max-width: 1010px) {
   .hero-box {
@@ -808,6 +815,9 @@ a {
   }
 }
 @media screen and (max-width: 416px) {
+  .header__logo.is-active {
+    color: #252B42;
+  }
   .header.is-active {
     background-color: #fff;
     height: 100vh;
@@ -818,12 +828,38 @@ a {
   }
   .section_hero {
     background-size: cover;
+    padding-bottom: 250px;
+  }
+  .section_brand {
+    margin-top: 80px;
+  }
+  .section_booking {
+    padding-left: 0px;
+    padding-right: 0px;
   }
   .wrap_header {
     display: none;
   }
   .wrap_nav-mobile {
     display: block;
+  }
+  .wrap_features {
+    margin-top: 0;
+  }
+  .wrap_review {
+    padding-top: 10px;
+  }
+  .wrap_brand {
+    flex-direction: column;
+    gap: 60px;
+  }
+  .wrap_btn-form {
+    margin-bottom: 45px;
+    gap: 30px;
+    text-align: center;
+  }
+  .wrap_booking {
+    padding-bottom: 293px;
   }
   .icon {
     width: 24px;
@@ -887,11 +923,57 @@ a {
     text-transform: capitalize;
   }
   .hero-desc .title {
-    padding-right: 35px;
-    padding-left: 35px;
+    padding-right: 34px;
+    padding-left: 34px;
   }
   .hero-desc__text {
     max-width: 279px;
     width: 100%;
+  }
+  .pricing__desc {
+    max-width: 271px;
+    width: 100%;
+    margin: 0 auto 60px;
+  }
+  .pricing .card_big {
+    margin-top: 40px;
+  }
+  .booking__holder {
+    margin-bottom: 110px;
+    padding-left: 42px;
+    padding-right: 42px;
+    padding-top: 120px;
+  }
+  .booking__desc-wrap {
+    margin-bottom: 120px;
+  }
+  .booking__card-pic {
+    display: none;
+  }
+  .booking__card-pic_mobile {
+    display: block;
+  }
+  .footer {
+    padding-left: 87px;
+    margin-top: 40px;
+  }
+  .footer__subtitle {
+    padding-right: 90px;
+    margin-bottom: 50px;
+  }
+  .footer__menu {
+    flex-direction: column;
+  }
+  .footer__social-row {
+    gap: 50px;
+  }
+  .footer__social-pictures {
+    align-items: baseline;
+  }
+  .footer__social-img {
+    display: none;
+  }
+  .footer__social-img_mobile {
+    display: block;
   }
 }/*# sourceMappingURL=styles.css.map */

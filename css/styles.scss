@@ -32,7 +32,7 @@ a {
     width: 100%;
     &__logo {
         margin-right: 76px;
-        color: currentColor;
+        color: white;
         font-weight: 700;
         font-size: 24px;
         line-height: 32px;
@@ -674,6 +674,9 @@ a {
         bottom: 0;
         margin-bottom: -283px;
     }
+    &__card-pic_mobile {
+        display: none;
+    }
     &__box {
         padding: 40px 50px;
         max-width: 610px;
@@ -820,6 +823,7 @@ a {
     }
     &__social-row {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         margin-top: 67px;
         padding-right: 27px;
@@ -835,6 +839,9 @@ a {
     &__social-pictures{
         display: flex;
         gap: 20px;
+    }
+    &__social-img_mobile {
+        display: none;
     }
 }
 
@@ -855,6 +862,9 @@ a {
 @media screen and (max-width: 416px) {
     // кусок для бургер меню и моб навигаци
     .header {
+        &__logo.is-active {
+            color: #252B42;
+        }
         &.is-active {
             background-color: #fff;
             height: 100vh;
@@ -864,8 +874,18 @@ a {
         padding-right: 20px;
         padding-left: 20px;
     }
-    .section_hero {
-        background-size: cover;
+    .section {
+        &_hero {
+            background-size: cover;
+            padding-bottom: 250px;
+        }
+        &_brand {
+            margin-top: 80px;
+        }
+        &_booking {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
     }
     .wrap {
         &_header {
@@ -873,6 +893,24 @@ a {
         }
         &_nav-mobile {
             display: block;
+        }
+        &_features {
+            margin-top: 0;
+        }
+        &_review {
+            padding-top: 10px;
+        }
+        &_brand {
+            flex-direction: column;
+            gap: 60px;
+        }
+        &_btn-form {
+            margin-bottom: 45px;
+            gap: 30px;
+            text-align: center;
+        }
+        &_booking {
+            padding-bottom: 293px;
         }
     }
 
@@ -964,12 +1002,66 @@ a {
 
     .hero-desc {
         .title {
-            padding-right: 35px;
-            padding-left: 35px;
+            padding-right: 34px;
+            padding-left: 34px;
         }
         &__text {
             max-width: 279px;
             width: 100%;
+        }
+    }
+
+    .pricing {
+        &__desc {
+            max-width: 271px;
+            width: 100%;
+            margin: 0 auto 60px;
+        }
+        & .card_big {
+            margin-top: 40px;
+        }
+
+    }
+
+    .booking {
+        &__holder {
+            margin-bottom: 110px;
+            padding-left: 42px;
+            padding-right: 42px;
+            padding-top: 120px;
+        }
+        &__desc-wrap {
+            margin-bottom: 120px;
+        }
+        &__card-pic {
+            display: none;
+        }
+        &__card-pic_mobile {
+            display: block;
+        }
+    }
+
+    .footer {
+        padding-left: 87px;
+        margin-top: 40px;
+        &__subtitle {
+            padding-right: 90px;
+            margin-bottom: 50px;
+        }
+        &__menu {
+            flex-direction: column;
+        }
+        &__social-row {
+            gap: 50px;
+        }
+        &__social-pictures {
+            align-items: baseline;
+        }
+        &__social-img {
+            display: none;
+        }
+        &__social-img_mobile {
+            display: block;
         }
     }
 
