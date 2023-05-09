@@ -41,6 +41,20 @@ a {
             margin-right: 0;
         }
     }
+    &__login {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 46px;
+        margin-left: auto;
+    }
+    &__login-text {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: right;
+        letter-spacing: 0.2px;
+    }
 }
 
 .section {
@@ -56,7 +70,7 @@ a {
     &_brand {
         margin-top: 134px;
     }
-    &_btn-form {
+    &_subscribe {
         margin-top: 71px;
         .title {
             color: #fff;
@@ -82,41 +96,21 @@ a {
         flex-wrap: wrap;
         color: #FFFFFF;
     }
-    &_nav-mobile {
+    &_mobile {
         display: none;
     }
     &_features {
         margin-top: 300px;
         margin-bottom: 96px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 31px;
     }
     &_review {
         padding: 112px 16px;
         margin-bottom: 85px;
         text-align: center;
     }
-    &_brand {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-    }
-    &_btn-form {
+    &_subscribe {
         max-width: 1047px;
-        background: linear-gradient(to right,#004788, #D71489);
-        padding: 32px 41px 28px 50px;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 246px;
-        margin-bottom: 132px;
     }
-    // &_pricing {
-    //     max-width: 999px;
-    //     width: 100%;
-    // }
     &_booking {
         position: relative;
         padding-bottom: 479px;
@@ -147,22 +141,6 @@ a {
     }
 }
 
-.login {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 46px;
-    margin-left: auto;
-    &__text {
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 22px;
-        text-align: right;
-        letter-spacing: 0.2px;
-    }
-}
-
-
 .btn {
     background-color: #23A6F0;
     border-radius: 5px;
@@ -173,7 +151,7 @@ a {
     &:hover {
         background-color: #08507a;
     }
-    &_link {
+    &_hero {
         display: inline-block;
         padding: 15px 36px;
         border-radius: 37px;
@@ -196,7 +174,7 @@ a {
             margin-right: 0;
         }
     }
-    &_login {
+    &_header {
         display: flex;
         align-items: center;
         gap: 17px;
@@ -204,7 +182,6 @@ a {
         padding-top: 13px;
         padding-bottom: 15px;
     }
-
     &__name {
         font-weight: 700;
         font-size: 14px;
@@ -258,13 +235,14 @@ a {
 }
 
 
-
-.hero-desc {
-    max-width: 701px;
-    width: 100%;
-    margin: 0 auto;
-    margin-bottom: 120px;
-    text-align: center;
+.hero {
+    &__desc {
+        max-width: 701px;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 120px;
+        text-align: center;
+    }
     &__text {
         // max-width: 539px;
         margin: 39px auto;
@@ -276,13 +254,15 @@ a {
         color: #FFFFFF;
         padding-right: 2px;
     }
-    // &__btns {
-    //     // margin-top: 54px;
-    //     // display: flex;
-    //     // justify-content: center;
-    //     // gap: 9px;
-    //     // flex-wrap: wrap;
-    // }
+    &__box {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+        position: absolute;
+        bottom: 0;
+        margin-bottom: -108px;
+    }
 }
 
 .title {
@@ -318,16 +298,6 @@ a {
     }
 }
 
-.hero-box {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: center;
-    position: absolute;
-    bottom: 0;
-    margin-bottom: -108px;
-}
-
 .block {
     background: #fff;
     color: #252B42;
@@ -359,13 +329,17 @@ a {
 }
 
 // Features styles start
-
-
-.features-content {
-    max-width: 328px;
-    width: 100%;
-    text-align: center;
-    padding: 40px 45.5px;
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 31px;
+    &__content {
+        max-width: 328px;
+        width: 100%;
+        text-align: center;
+        padding: 40px 45.5px;
+    }
     &__title {
         font-style: normal;
         font-weight: 700;
@@ -384,10 +358,10 @@ a {
         color: #737373;
         margin-top: 10px;
     }
-
 }
 
 .review {
+    text-align: center;
     &__title {
         margin-bottom: 10px;
     }
@@ -398,23 +372,22 @@ a {
         line-height: 20px;
         letter-spacing: 0.2px;
         color: #737373;
-        // max-width: 470px;
-        // width: 100%;
         margin: 0 auto;
+    }
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 63px;
+        justify-content: center;
+        max-width: 1013px;
+        width: 100%;
+        margin-top: 80px;
     }
 }
 
-.review-row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 63px;
-    justify-content: center;
-    max-width: 1013px;
-    width: 100%;
-    margin-top: 80px;
-}
 
-.review-block {
+
+.unit {
     max-width: 295px;
     width: 100%;
     padding: 38px 38px 40px 38px;
@@ -453,43 +426,61 @@ a {
     }
 }
 
-.brand__img-link {
-    width: 151px;
-    &_hooli {
-        width: 153px;
-        height: 34px;
-        padding: 0 27px 0 25px;
-    }
-    &_lyft {
-        width: 146px;
-        height: 59px;
-        padding: 0 31px 0 31px;
-    }
-    &_pied {
-        width: 152px;
-        height: 75px;
-        padding: 0 25px 0 25px;
-    }
-    &_stripe {
-        height: 42px;
-        padding: 0 20px 0 26px;
-        width: 148px;
-    }
-    &_aws {
-        height: 62px;
-        padding: 0 18px 0 27px;
-    }
-    &_reddit {
-        height: 72px;
-        padding: 0 32px 0 42px;
+.brand {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    &__img-link {
+       width: 151px;
+    
+       &_hooli {
+           width: 153px;
+           height: 34px;
+           padding: 0 27px 0 25px;
+       }
+    
+       &_lyft {
+           width: 146px;
+           height: 59px;
+           padding: 0 31px 0 31px;
+       }
+    
+       &_pied {
+           width: 152px;
+           height: 75px;
+           padding: 0 25px 0 25px;
+       }
+    
+       &_stripe {
+           height: 42px;
+           padding: 0 20px 0 26px;
+           width: 148px;
+       }
+    
+       &_aws {
+           height: 62px;
+           padding: 0 18px 0 27px;
+       }
+    
+       &_reddit {
+           height: 72px;
+           padding: 0 32px 0 42px;
+       }
     }
 }
 
-
-
-.btn-form__email {
-    max-width: 450px;
-    width: 100%;
+.subscribe {
+    background: linear-gradient(to right, #004788, #D71489);
+    padding: 32px 41px 28px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 246px;
+    margin-bottom: 132px;
+    &__email {
+        max-width: 450px;
+        width: 100%;
+    }
 }
 
 .email-form {
@@ -847,7 +838,7 @@ a {
 
 
 @media screen and (max-width: 1010px) {
-    .hero-box {
+    .hero__box {
         position: static;
     }
     .pricing__cards {
@@ -891,7 +882,7 @@ a {
         &_header {
             display: none;
         }
-        &_nav-mobile {
+        &_mobile {
             display: block;
         }
         &_features {
@@ -900,14 +891,8 @@ a {
         &_review {
             padding-top: 10px;
         }
-        &_brand {
-            flex-direction: column;
-            gap: 60px;
-        }
-        &_btn-form {
+        &_subscribe {
             margin-bottom: 45px;
-            gap: 30px;
-            text-align: center;
         }
         &_booking {
             padding-bottom: 293px;
@@ -977,38 +962,35 @@ a {
             letter-spacing: 0.2px;
             text-transform: capitalize;
         }
-        // &_medium {
-        //     font-weight: 700;
-        //     font-size: 40px;
-        //     line-height: 57px;
-        //     letter-spacing: 0.2px;
-        // }
-        // &_small {
-        //     font-weight: 700;
-        //     font-size: 24px;
-        //     line-height: 32px;
-        //     letter-spacing: 0.1px;
-        //     text-transform: capitalize;
-        // }
-        // &_minimal {
-        //     font-style: normal;
-        //     font-weight: 700;
-        //     font-size: 16px;
-        //     line-height: 24px;
-        //     letter-spacing: 0.1px;
-        //     color: #252B42;
-        // }
     }
 
-    .hero-desc {
-        .title {
-            padding-right: 34px;
-            padding-left: 34px;
+    .hero {
+        &__desc {
+            .title {
+                padding-right: 34px;
+                padding-left: 34px;
+            }
         }
         &__text {
             max-width: 279px;
             width: 100%;
         }
+        &__btns {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
+        }
+    }
+
+    .brand {
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .subscribe {
+        gap: 30px;
+        text-align: center;
     }
 
     .pricing {
