@@ -59,7 +59,6 @@ a {
 
 .section {
     position: relative;
-
     &_hero {
         padding-top: 226px;
         padding-bottom: 96px;
@@ -106,7 +105,6 @@ a {
     &_review {
         padding: 112px 16px;
         margin-bottom: 85px;
-        text-align: center;
     }
     &_subscribe {
         max-width: 1047px;
@@ -197,7 +195,6 @@ a {
         background: url('../img/Vector.png') no-repeat center right;
     }
     &_card {
-        // padding: 15px 82px;
         display: block;
         padding: 14px 21px 14px 25px;
     }
@@ -251,7 +248,6 @@ a {
         text-align: center;
     }
     &__text {
-        // max-width: 539px;
         margin: 39px auto;
         font-style: normal;
         font-weight: 500;
@@ -840,21 +836,98 @@ a {
 }
 
 
-@media screen and (max-width: 1010px) {
+@media screen and (max-width: 1200px) {
+    .section_hero {
+        background-size: cover;
+    }
     .hero__box {
         position: static;
+        gap: 2px;
+        margin-bottom: -184px;
+    }
+    .wrap {
+        &_features {
+            margin-top: 150px;
+        }
+        &_review {
+            padding-top: 50px;
+        }
+        &_booking {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+        &_footer {
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+    }
+    .features {
+        gap: 5px;
+    }
+    .review__row {
+        gap: 5px;
+    }
+    .subscribe {
+        gap: 0;
+        justify-content: space-between;
     }
     .pricing__cards {
         justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card_color {
+        margin-top: 40px;
     }
     .booking__card {
         position: static;
     }
+    .footer {
+        margin-top: 100px;
+        &__social-img {
+            display: none;
+        }
+        &__social-img_mobile {
+            display: block;
+        }
+    }
 }
 
+@media screen and (max-width: 1023px) {
+    .hero__box {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+    .brand {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+    .booking {
+        &__holder {
+            justify-content: center;
+        }
+        &__card-pic {
+            display: none;
+        }
+        &__card-pic_mobile {
+            display: block;
+        }
+    }
+    .footer__menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px;
+    }
+}
 
-@media screen and (max-width: 416px) {
-    // кусок для бургер меню и моб навигаци
+@media screen and (max-width: 900px) {
     .header {
         &__logo.is-active {
             color: #252B42;
@@ -864,6 +937,101 @@ a {
             height: 100vh;
         }
     }
+
+    .wrap {
+        &_header {
+            display: none;
+        }
+
+        &_mobile {
+            display: block;
+        }
+        &_pricing {
+            padding: 0 40px;
+        }
+    }
+            
+    .nav-mobile {
+        display: none;
+
+        &.is-active {
+            display: block;
+        }
+
+        &__list {
+            text-align: center;
+        }
+
+        &__link {
+            text-decoration: none;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 45px;
+            text-align: center;
+            letter-spacing: 0.2px;
+            color: #737373;
+        }
+    }
+    .logo-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 37px 30px 0px 36px;
+    
+        &__list {
+            display: flex;
+            align-items: center;
+        }
+    
+        &__item {
+            list-style-type: none;
+        }
+    }
+    .icon {
+        width: 24px;
+        height: 24px;
+        &_search {
+            background: url(../img/search.png);
+            margin-right: 24px;
+        }
+        &_basket {
+            background: url(../img/basket.png);
+            height: 22px;
+            margin-right: 32px;
+        }
+        &_burger {
+            background: url(../img/menu.png) no-repeat;
+            height: 14px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .booking__desc-wrap {
+        text-align: center;
+    }
+    .brand {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+        }
+    .footer {
+        &__holder {
+            text-align: center;
+        }
+        &__menu {
+            display: flex;
+            gap: 30px;
+        }
+    }
+    .btn_footer {
+        margin: 5px auto;
+    }
+}
+
+@media screen and (max-width: 416px) {
+
     .section, .footer {
         padding-right: 20px;
         padding-left: 20px;
@@ -882,12 +1050,6 @@ a {
         }
     }
     .wrap {
-        &_header {
-            display: none;
-        }
-        &_mobile {
-            display: block;
-        }
         &_features {
             margin-top: 0;
         }
@@ -899,58 +1061,6 @@ a {
         }
         &_booking {
             padding-bottom: 293px;
-        }
-    }
-
-    .icon {
-        width: 24px;
-        height: 24px;
-        &_search {
-            background: url(../img/search.png);
-            margin-right: 24px;
-        }
-        &_basket {
-            background: url(../img/basket.png);
-            height: 22px;
-            margin-right: 32px;
-        }
-        &_burger {
-            background: url(../img/menu.png) no-repeat;
-            height: 14px;
-        }
-    }
-
-    .logo-row {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        padding: 37px 30px 0px 36px;
-        &__list {
-            display: flex;
-            align-items: center;
-        }
-        &__item {
-            list-style-type: none;
-        }
-    }
-
-    .nav-mobile {
-        display: none;
-        &.is-active {
-            display: block;
-        }
-        &__list {
-            text-align: center;
-        }
-        &__link {
-            text-decoration: none;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 30px;
-            line-height: 45px;
-            text-align: center;
-            letter-spacing: 0.2px;
-            color: #737373;
         }
     }
 
@@ -984,11 +1094,6 @@ a {
             align-items: center;
             gap: 25px;
         }
-    }
-
-    .brand {
-        flex-direction: column;
-        gap: 60px;
     }
 
     .subscribe {
@@ -1027,10 +1132,8 @@ a {
     }
 
     .footer {
-        padding-left: 87px;
         margin-top: 40px;
         &__subtitle {
-            padding-right: 90px;
             margin-bottom: 50px;
         }
         &__menu {
@@ -1042,12 +1145,26 @@ a {
         &__social-pictures {
             align-items: baseline;
         }
-        &__social-img {
-            display: none;
-        }
-        &__social-img_mobile {
-            display: block;
-        }
     }
 
+}
+
+@media screen and (max-width: 359px) {
+    .wrap {
+        &_footer {
+            padding-left: 0;
+        }
+    }
+    .icon {
+        margin-right: 0;
+    }
+    .email {
+        flex-wrap: wrap;
+    }
+    .btn-submit_email {
+        width: 100%;
+    }
+    .card__select svg {
+        left: 0px;
+    }
 }
