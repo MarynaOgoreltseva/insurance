@@ -641,9 +641,6 @@ a {
   bottom: 0;
   margin-bottom: -283px;
 }
-.booking__card-pic_mobile {
-  display: none;
-}
 .booking__box {
   padding: 40px 50px;
   max-width: 610px;
@@ -889,12 +886,6 @@ a {
   .booking__card {
     justify-content: center;
   }
-  .booking__card-pic {
-    display: none;
-  }
-  .booking__card-pic_mobile {
-    display: block;
-  }
   .footer__menu {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -1066,12 +1057,6 @@ a {
   }
   .booking__desc-wrap {
     margin-bottom: 120px;
-  }
-  .booking__card-pic {
-    display: none;
-  }
-  .booking__card-pic_mobile {
-    display: block;
   }
   .footer {
     margin-top: 40px;

@@ -756,10 +756,10 @@
                         </div>
                     </div>
                     <div class="booking__card">
-                        <div class="booking__card-img">
-                            <img src="img/bookingImg.jpg" class="booking__card-pic">
-                            <img src="img/family.jpg" class="booking__card-pic_mobile">
-                        </div>
+                        <picture class="booking__card-img">
+                            <source srcset="img/family.jpg" media="(max-width: 1023px)">
+                            <img src="img/bookingImg.jpg">
+                        </picture>
                         <div class="booking__box">
                             <h3 class="title title_small">
                                 Book Appointment

@@ -660,9 +660,6 @@ a {
         bottom: 0;
         margin-bottom: -283px;
     }
-    &__card-pic_mobile {
-        display: none;
-    }
     &__box {
         padding: 40px 50px;
         max-width: 610px;
@@ -917,12 +914,6 @@ a {
         &__card {
             justify-content: center;
         }
-        &__card-pic {
-            display: none;
-        }
-        &__card-pic_mobile {
-            display: block;
-        }
     }
     .footer__menu {
         display: grid;
@@ -1130,12 +1121,6 @@ a {
         }
         &__desc-wrap {
             margin-bottom: 120px;
-        }
-        &__card-pic {
-            display: none;
-        }
-        &__card-pic_mobile {
-            display: block;
         }
     }
 
