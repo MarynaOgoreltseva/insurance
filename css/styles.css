@@ -768,6 +768,9 @@ a {
   letter-spacing: 0.2px;
   color: #737373;
 }
+.footer__item-link:hover {
+  text-decoration: underline;
+}
 .footer__item-link_contact {
   display: flex;
   gap: 1px;
